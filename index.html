@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VapeCloud - Премиум вейпинг устройства</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-cloud"></i>
+                    <span>VapeCloud</span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Главная</a>
+                    <a href="#products" class="nav-link">Каталог</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link">Для кого <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="pages/male.html">Для мужчин</a>
+                            <a href="pages/female.html">Для женщин</a>
+                            <a href="pages/unisex.html">Унисекс</a>
+                        </div>
+                    </div>
+                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="#contact" class="nav-link">Контакты</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="auth-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Идеальный вейп для вашего стиля</h1>
+            <p class="hero-subtitle">Откройте мир премиальных устройств с непревзойденным вкусом и дизайном</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToProducts()">Выбрать устройство</button>
+                <button class="btn btn-secondary">Узнать больше</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Довольных клиентов</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Моделей устройств</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Года гарантии</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Выберите категорию</h2>
+            <div class="categories-grid">
+                <a href="pages/male.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mars"></i>
+                    </div>
+                    <h3>Для мужчин</h3>
+                    <p>Мощные и стильные устройства</p>
+                    <span class="category-arrow">→</span>
+                </a>
+                
+                <a href="pages/female.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                    <h3>Для женщин</h3>
+                    <p>Элегантные и компактные модели</p>
+                    <span class="category-arrow">→</span>
+                </a>
+                
+                <a href="pages/unisex.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-venus-mars"></i>
+                    </div>
+                    <h3>Унисекс</h3>
+                    <p>Универсальные решения для всех</p>
+                    <span class="category-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+        <div class="container">
+            <h2 class="section-title">Популярные товары</h2>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>VapeCloud - Лидер в мире вейпинга</h2>
+                    <p>Мы предлагаем только качественные устройства от проверенных производителей. Наша миссия - сделать вейпинг доступным и безопасным для каждого.</p>
+                    <div class="features-list">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Гарантия качества</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Быстрая доставка</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <span>Поддержка 24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Корзина</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span id="cartTotal">0 ₽</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-cloud"></i>
+                        <span>VapeCloud</span>
+                    </div>
+                    <p>Премиальные вейпинг устройства для вашего стиля жизни.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Категории</h4>
+                    <ul>
+                        <li><a href="pages/male.html">Для мужчин</a></li>
+                        <li><a href="pages/female.html">Для женщин</a></li>
+                        <li><a href="pages/unisex.html">Унисекс</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Возврат</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> info@vapecloud.ru</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 123</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 VapeCloud. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
